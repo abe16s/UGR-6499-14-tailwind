@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #069AF3;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 0;
+    margin-left: 5%;
+}
+
+#navbar hr {
+    height: 2px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+#navbar header hr:first-of-type {
+    width: 100%;
+    margin-top: -19px;
+    margin-bottom: 5px;
+}
+
+#navbar header{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: inherit;
+}
+
+#main-doc {
+    width: 75%;
+    padding: 10px;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+#gantt {
+    width: 100%;
+}
+
+table td{
+    text-align: left;
+}
+
+table th{
+    text-align: center;
+}
+
+table {
+    background-color: rgb(163, 162, 162);
+}
+
+th, td {
+    border: 1.5px solid rgb(163, 162, 162);
+}
+
+td {
+    margin: 50px;
+    background-color: white;
+}
+
+#References ul li a{
+    text-decoration: none;
+    color: #069AF3;
+}
+
+#References ul li a:hover {
+    color: sienna;
+    font-size: 1.05em;
+}
+
+#References ul li a:active {
+    color: black;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#spanner {
+    text-align: left;
+    border-top: 2px solid black;
+}
+
+@media (max-width: 1000px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;  
+        flex-direction: row;
+        overflow: auto;
+        align-items: center;
+    }
+
+    #main-doc {
+        width: 100%;
+        overflow: auto;
+    }
+
+    #navbar a {
+        border-right: 2px solid black;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    #navbar a:last-of-type {
+        border: none;
+    }
+
+    #navbar hr{
+        height: 0;
+        border: none;
+    }
+
+    #navbar header{ 
+        left: 0;
+        border-right: 2px double black;
+        padding-right: 10px;
+    }
+}

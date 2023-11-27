@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <style>
+        #body {
+            background-color: turquoise;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #survey-form {
+            font-family: cursive;
+            background-color: rgba(51, 49, 46, 0.8);
+            color: white;
+            padding: 15px;
+            margin: 100px;
+            transform: scale(1.2);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+        }
+        #title {
+            font-family: monospace;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1 id="title">Identity card</h1>
+    <p id="description">Confirm your identity</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label> <br> 
+       <input type="text" id="name" placeholder="Enter your name" required><br>
+       <label for="email" id="email-label">Email</label><br> 
+       <input type="email" id="email" placeholder="Enter your Email" required> <br>
+       <label for="number" id="number-label">Age</label><br>
+       <input type="number" id="number" placeholder="Age" min="10" max="50" >  <br> <br>
+       <p>Gender</p>
+       <input type="radio" name="gender" id="male" value="male">
+       <label for="male">Male</label> <br>
+       <input type="radio" name="gender" id="female" value="female">
+       <label for="female">Female</label> <br> <br>
+       <p>Which option best describes your current role?</p>
+       <select name="dropdown" id="dropdown">
+           <option value="student">Student</option>
+           <option value="full-time-job">full time job</option>
+           <option value="other">Other</option>
+       </select>
+       <p>What is your favourite entertainment? (check all that you like)</p>
+       <input type="checkbox" name="favourite" id="movie" value="movie">
+       <label for="movie">Movie</label> <br>
+       <input type="checkbox" name="favourite" id="Music" value="music">
+       <label for="Music">Music</label> <br>
+       <input type="checkbox" name="favourite" id="sports" value="sports">
+       <label for="sports">Sports</label><br>
+       <input type="checkbox" name="favourite" id="books" value="books">
+       <label for="books">Books</label><br> <br>
+       <textarea name="comments" id="textarea" cols="50" rows="10" placeholder="additional information..."></textarea><br><br>
+       <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+</html>
