@@ -3,91 +3,95 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="css/output-styles.css">
         <title>Projects</title>
     </head>
     <body>
         <header>
-            <nav>
-                <label>
-                    <input type="checkbox">
-                </label>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+            <nav class="flex justify-center px-4 flex-col lg:flex-row bg-slate-800 text-white relative py-3 gap-y-2">
+                <ul class="items-center justify-around w-full flex-col lg:flex-row gap-y-2 lg:flex hidden navbar-menu border-t-4 border-white pt-3 lg:pt-0 lg:border-none">
+                    <li><a href="Home.html" class="hover:text-orange-400">Home</a></li>
+                    <li><a href="Resume.html" class="hover:text-orange-400">Resume</a></li>
+                    <li><a href="Projects.html" class="border-solid border-white border-b-4 p-2 bg-gray-500 pointer-events-none">Projects</a></li>
                 </ul>
-                <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo"></a>  
-                <ul >
-                    <li><a href="Adventure.html">Adventure</a></li>
-                    <li><a href="Entertainments.html">Entertainments</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>       
+                <div class="flex justify-between items-center lg:order-none order-first lg:w-1/12">
+                    <a href="Home.html"><img class="rounded-full max-h-16" src="images/AB_Logo.jpg" alt="AB Logo"></a>
+                    <i class="fa-solid fa-bars text-white text-4xl lg:hidden cursor-pointer" id="navbar-burger"></i>
+                    <i class="fa-solid fa-x text-white text-4xl lg:hidden hidden cursor-pointer" id="navbar-burger--close"></i>
+                </div>  
+                <ul class="items-center justify-around w-full flex-col lg:flex-row gap-y-2 lg:flex hidden navbar-menu">
+                    <li><a href="Adventure.html" class="hover:text-orange-400">Adventure</a></li>
+                    <li><a href="Entertainments.html" class="hover:text-orange-400">Entertainments</a></li>
+                    <li><a href="Contact.html" class="hover:text-orange-400">Contact</a></li>
+                </ul>    
+            </nav>  
+            <script src="js/navbar.js"></script>     
         </header>
+        <hr class="h-1 bg-white">
         <hr>
         <main>
-            <hgroup>
-                <h1>Projects</h1>
-                <p>I have done a lot of projects through out my learning process as a software engineer. Most of the projects are simple static web pages made through my learning path of Responsive Web Design course on <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>. There is also one project that I made with my friend in summer of 2023 as a pet project, made out of passion.</p>
+            <hgroup class="flex justify-center flex-col bg-slate-800 text-white min-h-[50vh] px-[4%] py-4">
+                <h1 class="font-bold text-2xl lg:text-3xl mb-5">Projects</h1>
+                <p>I have done a lot of projects through out my learning process as a software engineer. Most of the projects are simple static web pages made through my learning path of Responsive Web Design course on <a href="https://www.freecodecamp.org/" target="_blank" class="font-semibold underline hover:text-orange-400">freeCodeCamp</a>. There is also one project that I made with my friend in summer of 2023 as a pet project, made out of passion.</p>
             </hgroup>
-            <section>
-                <h2>Projects</h2>
-                <div>
-                    <a href="Resources/web_pages/Tribute_Page.html" target="_blank"><img src="images/Tribute_Page.png" alt="Project 1: Tribute page for Dr. Aklilu Lemma"></a>
+            <section class="p-[3%] my-9 mx-auto px-[4%] flex flex-wrap justify-center gap-6 text-justify">
+                <h2 class="font-bold text-2xl mb-4 underline w-full">Projects</h2>
+                <div class="w-11/12 max-w-[300px] bg-slate-800  text-white p-5 rounded-md flex flex-col gap-4">
+                    <a href="Resources/web_pages/Tribute_Page.html" target="_blank"><img class="hover:opacity-70" src="images/Tribute_Page.png" alt="Project 1: Tribute page for Dr. Aklilu Lemma"></a>
                     <p>One of the required projects in the course of freeCodeCamp. This web page is a tribute to one of Ethiopia's most renowned biologist, Dr Aklilu Lemma and his life works.</p>
                 </div>
-                <div>
-                    <a href="https://github.com/abe16s/IDIR" target="_blank"><img src="images/Idir_Home_Page.png" alt="Project 2: Local Idir managing app"></a>
+                <div class="w-11/12 max-w-[300px] bg-slate-800  text-white p-5 rounded-md flex flex-col gap-4">
+                    <a href="https://github.com/abe16s/IDIR" target="_blank"><img class="hover:opacity-70" src="images/Idir_Home_Page.png" alt="Project 2: Local Idir managing app"></a>
                     <p>A pet project with my friend through the summer of 2023 about an Idir managing application that helps facilitate the management of Idir members, monthly payments and other financial workings of Idir. This project was made with java swing that we took on OOP course at 2<sup>nd</sup> year 2<sup>nd</sup> semester.</p>
-                    <aside>"Idir" is a local social system practiced in Ethiopia which is the gathering of people and helping each other through happy and bad times.</aside>
+                    <aside class="italic">"Idir" is a local social system practiced in Ethiopia which is the gathering of people and helping each other through happy and bad times.</aside>
                 </div>
-                <div>
-                    <a href="Resources/web_pages/cafe_menu.html" target="_blank"><img src="images/Cafe_Menu.png" alt="Project 3: A sample cafe menu"></a>
+                <div class="w-11/12 max-w-[300px] bg-slate-800  text-white p-5 rounded-md flex flex-col gap-4">
+                    <a href="Resources/web_pages/cafe_menu.html" target="_blank"><img class="hover:opacity-70" src="images/Cafe_Menu.png" alt="Project 3: A sample cafe menu"></a>
                     <p>An example project on the freeCodeCamp course. This web page is a menu for a hypothetical cafe.</p>
                 </div>
-                <div>
-                    <a href="Resources/web_pages/technical_documentation.html" target="_blank"><img src="images/Technical_Documentation.png" alt="Project 4: A technical documentation"></a>
+                <div class="w-11/12 max-w-[300px] bg-slate-800  text-white p-5 rounded-md flex flex-col gap-4">
+                    <a href="Resources/web_pages/technical_documentation.html" target="_blank"><img class="hover:opacity-70" src="images/Technical_Documentation.png" alt="Project 4: A technical documentation"></a>
                     <p>One of the required projects of the freeCodeCamp course. This one is a responsive technical documentation page which I made with project proposal of my course project for the course Fundamental of Software Engineering</p>
                 </div>
-                <div>
-                    <a href="Resources/web_pages/bar_chart.html" target="_blank"><img src="images/Bar_chart.png" alt="Project 5: A simple bar chart"></a>
+                <div class="w-11/12 max-w-[300px] bg-slate-800  text-white p-5 rounded-md flex flex-col gap-4">
+                    <a href="Resources/web_pages/bar_chart.html" target="_blank"><img class="hover:opacity-70" src="images/Bar_chart.png" alt="Project 5: A simple bar chart"></a>
                     <p>An example project on the freeCodeCamp course. This web page is just a simple bar chart example</p>
                 </div>
-                <div>
-                    <a href="Resources/web_pages/survey_form.html" target="_blank"><img src="images/Survey_form.png" alt="Project 6: A sample survey"></a>   
+                <div class="w-11/12 max-w-[300px] bg-slate-800  text-white p-5 rounded-md flex flex-col gap-4">
+                    <a href="Resources/web_pages/survey_form.html" target="_blank"><img class="hover:opacity-70" src="images/Survey_form.png" alt="Project 6: A sample survey"></a>   
                     <p>This one is also one of the required projects of the freeCodeCamp course. This one is a sample survey to practice the form structure in html.</p>
                 </div>
             </section>
         </main>
-        <footer>
-            <div>
+        <footer class="flex flex-col bg-slate-800 text-white text-center p-2">
+            <div class="flex flex-col md:flex-row gap-4 justify-evenly items-center py-7">
                 <nav>
                     <ul>
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Adventure.html">Adventure</a></li>
-                        <li><a href="Entertainments.html">Entertainments</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Home.html" class="hover:text-orange-400">Home</a></li>
+                        <li><a href="Resume.html" class="hover:text-orange-400">Resume</a></li>
+                        <li><a href="Projects.html" class="hover:text-orange-400">Projects</a></li>
+                        <li><a href="Adventure.html" class="hover:text-orange-400">Adventure</a></li>
+                        <li><a href="Entertainments.html" class="hover:text-orange-400">Entertainments</a></li>
+                        <li><a href="Contact.html" class="hover:text-orange-400">Contact</a></li>
                     </ul>
                 </nav>
                 <address>
-                    <p>How do you prefer to take coffee?</p>
+                    <p class="mb-2">How do you prefer to take coffee?</p>
                     <ul>
-                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
-                        <li><a href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
-                        <li><a href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
-                        <li><a href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
+                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank" class="hover:text-orange-400">Facebook</a></li>
+                        <li><a href="https://t.me/Abe16s" target="_blank" class="hover:text-orange-400">Telegram</a></li>
+                        <li><a href="https://www.instagram.com/abe16s/" target="_blank" class="hover:text-orange-400">Instagram</a></li>
+                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank" class="hover:text-orange-400">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank" class="hover:text-orange-400">LinkedIn</a></li>
+                        <li><a href="mailto:abenezerseifu123@gmail.com" class="hover:text-orange-400">Send a mail: abenezerseifu123@gmail.com</a></li>
+                        <li><a href="tel:0936120470" target="_blank" class="hover:text-orange-400">Call: +251936120470</a></li>
                     </ul>
                 </address>
             </div>
             <hr>
-            <div>
-                <img src="images/AB_Logo.jpg" alt="AB Logo">
+            <div class="flex gap-4 items-center">
+                <img src="images/AB_Logo.jpg" alt="AB Logo" class="w-10 rounded-full">
                 <p>Copyright ©2023 All rights reserved | Abenezer Seifu </p>
             </div>
         </footer>

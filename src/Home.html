@@ -3,157 +3,156 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="css/output-styles.css">
+        <title>Portfolio Home</title>
     </head>
     <body>
         <header>
-            <nav>
-                <label>
-                    <input type="checkbox">
-                </label>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+            <nav class="flex justify-center px-4 flex-col lg:flex-row bg-slate-800 text-white relative py-3 gap-y-2">
+                <ul class="items-center justify-around w-full flex-col lg:flex-row gap-y-2 lg:flex hidden navbar-menu border-t-4 border-white pt-3 lg:pt-0 lg:border-none">
+                    <li><a href="Home.html" class="border-solid border-white border-b-4 p-2 bg-gray-500 pointer-events-none">Home</a></li>
+                    <li><a href="Resume.html" class="hover:text-orange-400">Resume</a></li>
+                    <li><a href="Projects.html" class="hover:text-orange-400">Projects</a></li>
                 </ul>
-                <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo"></a>  
-                <ul>
-                    <li><a href="Adventure.html">Adventure</a></li>
-                    <li><a href="Entertainments.html">Entertainments</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                <div class="flex justify-between items-center lg:order-none order-first lg:w-1/12">
+                    <a href="Home.html"><img class="rounded-full max-h-16" src="images/AB_Logo.jpg" alt="AB Logo"></a>
+                    <i class="fa-solid fa-bars text-white text-4xl lg:hidden cursor-pointer" id="navbar-burger"></i>
+                    <i class="fa-solid fa-x text-white text-4xl lg:hidden hidden cursor-pointer" id="navbar-burger--close"></i>
+                </div>  
+                <ul class="items-center justify-around w-full flex-col lg:flex-row gap-y-2 lg:flex hidden navbar-menu">
+                    <li><a href="Adventure.html" class="hover:text-orange-400">Adventure</a></li>
+                    <li><a href="Entertainments.html" class="hover:text-orange-400">Entertainments</a></li>
+                    <li><a href="Contact.html" class="hover:text-orange-400">Contact</a></li>
                 </ul>    
-            </nav>       
+            </nav>  
+            <script src="js/navbar.js"></script>     
         </header>
-        <hr>
+        <hr class="h-1 bg-white">
         <main>
-            <section>
-                <hgroup>
-                    <h1 class="text-3xl font-bold underline">Hello World, <br>I am Abenezer Seifu</h1>
-                    <p>A 3<sup>rd</sup> year Software Engineering student at Addis Ababa University. Focusing on learning and striving to cope up with the fast growing tech sector.</p>
+            <section class="overflow-hidden relative text-white bg-slate-800">
+                <hgroup class="w-1/2 absolute top-1/2 -translate-y-1/2 left-8">
+                    <h1 class="font-bold text-xl lg:text-3xl">Hello World, <br>I am Abenezer Seifu</h1>
+                    <p class="text-sm lg:text-lg mt-5">A 3<sup>rd</sup> year Software Engineering student at Addis Ababa University. Focusing on learning and striving to cope up with the fast growing tech sector.</p>
                 </hgroup>
-                <img src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer">
+                <img src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer" class="relative left-1/3 w-full max-w-2xl lg:left-1/2">
             </section>
-            <div>
+            <div class="p-8 bg-slate-800 text-white my-8 w-4/5 m-auto">
                 <section>
-                    <h2>Related pages</h2>
-                    <a href="Resume.html"><div>
-                        <img src="images/Resume.png" alt="Resume Page">
-                        <hgroup>
-                            <h4>Resume</h4>
+                    <h2 class="text-3xl mb-6 font-semibold">Related pages</h2>
+                    <a href="Resume.html" class="w-4/5 block my-8 hover:shadow-sm hover:shadow-white mx-auto"><div class="flex flex-col gap-x-3 items-center md:flex-row md:my-8">
+                        <img src="images/Resume.png" alt="Resume Page" class="w-full self-stretch rounded-lg aspect-video object-cover max-w-xs m-auto lg:m-0">
+                        <hgroup class="flex flex-col justify-around gap-y-3 h-full">
+                            <h4 class="text-xl underline">Resume</h4>
                             <p>If you want to know more about me you can check my Resume here.</p>
                         </hgroup>
                     </div></a>
-                    <hr>
-                    <a href="Projects.html"><div>
-                        <img src="images/Tribute_Page.png" alt="Projects Page">
-                        <hgroup>
-                        <h4>Projects</h4>
+                    <hr class="h-0.5 bg-white">
+                    <a href="Projects.html" class="w-4/5 block my-8 hover:shadow-sm hover:shadow-white mx-auto"><div class="flex flex-col gap-x-3 items-center md:flex-row md:my-8">
+                        <img src="images/Tribute_Page.png" alt="Projects Page" class="w-full self-stretch rounded-lg aspect-video object-cover max-w-xs m-auto lg:m-0">
+                        <hgroup class="flex flex-col justify-around gap-y-3 h-full">
+                        <h4 class="text-xl underline">Projects</h4>
                             <P>You can see all the personal projects that I have done previously. Through my time as learning and as an individual hobby.</P>
                         </hgroup>
                     </div></a>
-                    <hr>
-                    <a href="Adventure.html"><div>
-                        <img src="images/Meskel_IMG_26.JPG" alt="Adventure Page">
-                        <hgroup>
-                            <h4>Adventure</h4>
+                    <hr class="h-0.5 bg-white">
+                    <a href="Adventure.html" class="w-4/5 block my-8 hover:shadow-sm hover:shadow-white mx-auto"><div class="flex flex-col gap-x-3 items-center md:flex-row md:my-8">
+                        <img src="images/Meskel_IMG_26.JPG" alt="Adventure Page" class="w-full self-stretch rounded-lg aspect-video object-cover max-w-xs m-auto lg:m-0">
+                        <hgroup class="flex flex-col justify-around gap-y-3 h-full">
+                            <h4 class="text-xl underline">Adventure</h4>
                             <p>I go to Gurage Zone every year for celebration of Meskel. And I always have a great time there with all my family. You can enjoy my photo gallery of my time there.</p>
                         </hgroup>
                     </div></a>
-                    <hr>
-                    <a href="Entertainments.html"><div>
-                        <img src="images/OneRepublic.jpg" alt="Entertainments Page">
-                        <hgroup>
-                            <h4>Entertainments</h4>
+                    <hr class="h-0.5 bg-white">
+                    <a href="Entertainments.html" class="w-4/5 block my-8 hover:shadow-sm hover:shadow-white mx-auto"><div class="flex flex-col gap-x-3 items-center md:flex-row md:my-8">
+                        <img src="images/OneRepublic.jpg" alt="Entertainments Page" class="w-full self-stretch rounded-lg aspect-video object-cover max-w-xs m-auto lg:m-0">
+                        <hgroup class="flex flex-col justify-around gap-y-3 h-full">
+                            <h4 class="text-xl underline">Entertainments</h4>
                             <p>I spend most of my free time listening to Music, Watching Football and different entertaining activities. You can check about all my entertainment alternatives that I enjoy the most.</p>
                         </hgroup>
                     </div></a>
-                    <hr>
+                    <hr class="h-0.5 bg-white">
                 </section> 
             </div>
             
             <div>
+                <div class="flex bg-slate-800 text-white text-center px-2 py-7 overflow-auto w-3/5 mx-auto my-7 snap-x">
+                    <div class="min-w-full">
+                        <blockquote id="quote_1">
+                            "Whether you think you can or you think you can't, you're right." 
+                            <br>- Henry Ford
+                        </blockquote>
+                    </div>
+                    <div class="min-w-full">
+                        <blockquote id="quote_2">
+                            "The most important thing is to enjoy your life - to be happy - it's all that matters." 
+                            <br>- Steve Jobs
+                        </blockquote>
+                    </div>
+                    <div class="min-w-full">
+                        <blockquote id="quote_3">
+                            "The greatest glory in living lies not in never falling, but in rising every time we fall." 
+                            <br>- Nelson Mandela
+                        </blockquote>
+                    </div>
+                    <div class="min-w-full">
+                        <blockquote id="quote_4">
+                            "Nothing is impossible, the word itself says 'I'm possible'!"
+                            <br>- Audrey Hepburn
+                        </blockquote>
+                    </div>
+                    <div class="min-w-full">
+                        <blockquote id="quote_5">
+                            "Life is like riding a bicycle. To keep your balance you must keep moving."
+                            <br>- Albert Einstein
+                        </blockquote>
+                    </div>
+                    <div class="min-w-full">
+                        <blockquote id="quote_6">
+                            "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."
+                            <br>- Bill Keane 
+                        </blockquote>
+                    </div>
+                </div>
                 <div>
-                    <div>
-                        <div>
-                            <blockquote id="quote_1">
-                                "Whether you think you can or you think you can't, you're right." 
-                                <br>- Henry Ford
-                            </blockquote>
-                        </div>
-                        <div>
-                            <blockquote id="quote_2">
-                                "The most important thing is to enjoy your life - to be happy - it's all that matters." 
-                                <br>- Steve Jobs
-                            </blockquote>
-                        </div>
-                        <div>
-                            <blockquote id="quote_3">
-                                "The greatest glory in living lies not in never falling, but in rising every time we fall." 
-                                <br>- Nelson Mandela
-                            </blockquote>
-                        </div>
-                        <div>
-                            <blockquote id="quote_4">
-                                "Nothing is impossible, the word itself says 'I'm possible'!"
-                                <br>- Audrey Hepburn
-                            </blockquote>
-                        </div>
-                        <div>
-                            <blockquote id="quote_5">
-                                "Life is like riding a bicycle. To keep your balance you must keep moving."
-                                <br>- Albert Einstein
-                            </blockquote>
-                        </div>
-                        <div>
-                            <blockquote id="quote_6">
-                                "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present."
-                                <br>- Bill Keane 
-                            </blockquote>
-                        </div>
-                        <div>❮</div>
-                        <div>❯</div>
-                    </div>
-                    <div>
-                        <a href="#quote_1"></a>
-                        <a href="#quote_2"></a>
-                        <a href="#quote_3"></a>
-                        <a href="#quote_4"></a>
-                        <a href="#quote_5"></a>
-                        <a href="#quote_6"></a>
-                    </div>
+                    <a href="#quote_1"></a>
+                    <a href="#quote_2"></a>
+                    <a href="#quote_3"></a>
+                    <a href="#quote_4"></a>
+                    <a href="#quote_5"></a>
+                    <a href="#quote_6"></a>
                 </div>
             </div>
             <script src="js/Home_Quotes.js"></script>
         </main>
-        <footer>
-            <div>
+        <footer class="flex flex-col bg-slate-800 text-white text-center p-2">
+            <div class="flex flex-col md:flex-row gap-4 justify-evenly items-center py-7">
                 <nav>
                     <ul>
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Adventure.html">Adventure</a></li>
-                        <li><a href="Entertainments.html">Entertainments</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Home.html" class="hover:text-orange-400">Home</a></li>
+                        <li><a href="Resume.html" class="hover:text-orange-400">Resume</a></li>
+                        <li><a href="Projects.html" class="hover:text-orange-400">Projects</a></li>
+                        <li><a href="Adventure.html" class="hover:text-orange-400">Adventure</a></li>
+                        <li><a href="Entertainments.html" class="hover:text-orange-400">Entertainments</a></li>
+                        <li><a href="Contact.html" class="hover:text-orange-400">Contact</a></li>
                     </ul>
                 </nav>
                 <address>
-                    <p>How do you prefer to take coffee?</p>
+                    <p class="mb-2">How do you prefer to take coffee?</p>
                     <ul>
-                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
-                        <li><a href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
-                        <li><a href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
-                        <li><a href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
+                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank" class="hover:text-orange-400">Facebook</a></li>
+                        <li><a href="https://t.me/Abe16s" target="_blank" class="hover:text-orange-400">Telegram</a></li>
+                        <li><a href="https://www.instagram.com/abe16s/" target="_blank" class="hover:text-orange-400">Instagram</a></li>
+                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank" class="hover:text-orange-400">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank" class="hover:text-orange-400">LinkedIn</a></li>
+                        <li><a href="mailto:abenezerseifu123@gmail.com" class="hover:text-orange-400">Send a mail: abenezerseifu123@gmail.com</a></li>
+                        <li><a href="tel:0936120470" target="_blank" class="hover:text-orange-400">Call: +251936120470</a></li>
                     </ul>
                 </address>
             </div>
             <hr>
-            <div>
-                <img src="images/AB_Logo.jpg" alt="AB Logo">
+            <div class="flex gap-4 items-center">
+                <img src="images/AB_Logo.jpg" alt="AB Logo" class="w-10 rounded-full">
                 <p>Copyright ©2023 All rights reserved | Abenezer Seifu </p>
             </div>
         </footer>

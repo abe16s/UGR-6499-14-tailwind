@@ -3,194 +3,197 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="css/output-styles.css">
         <title>Resume</title>
     </head>
     <body>
         <header>
-            <nav>
-                <label>
-                    <input type="checkbox">
-                </label>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
+            <nav class="flex justify-center px-4 flex-col lg:flex-row bg-slate-800 text-white relative py-3 gap-y-2">
+                <ul class="items-center justify-around w-full flex-col lg:flex-row gap-y-2 lg:flex hidden navbar-menu border-t-4 border-white pt-3 lg:pt-0 lg:border-none">
+                    <li><a href="Home.html" class="hover:text-orange-400">Home</a></li>
+                    <li><a href="Resume.html" class="border-solid border-white border-b-4 p-2 bg-gray-500 pointer-events-none">Resume</a></li>
+                    <li><a href="Projects.html" class="hover:text-orange-400">Projects</a></li>
                 </ul>
-                <a href="Home.html"><img src="images/AB_Logo.jpg" alt="AB Logo"></a>  
-                <ul >
-                    <li><a href="Adventure.html">Adventure</a></li>
-                    <li><a href="Entertainments.html">Entertainments</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>       
+                <div class="flex justify-between items-center lg:order-none order-first lg:w-1/12">
+                    <a href="Home.html"><img class="rounded-full max-h-16" src="images/AB_Logo.jpg" alt="AB Logo"></a>
+                    <i class="fa-solid fa-bars text-white text-4xl lg:hidden cursor-pointer" id="navbar-burger"></i>
+                    <i class="fa-solid fa-x text-white text-4xl lg:hidden hidden cursor-pointer" id="navbar-burger--close"></i>
+                </div>  
+                <ul class="items-center justify-around w-full flex-col lg:flex-row gap-y-2 lg:flex hidden navbar-menu">
+                    <li><a href="Adventure.html" class="hover:text-orange-400">Adventure</a></li>
+                    <li><a href="Entertainments.html" class="hover:text-orange-400">Entertainments</a></li>
+                    <li><a href="Contact.html" class="hover:text-orange-400">Contact</a></li>
+                </ul>    
+            </nav>  
+            <script src="js/navbar.js"></script>     
         </header>
-        <hr>
+        <hr class="h-1 bg-white">
         <main>
-            <section>
-                <img src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer">
-                <hgroup>
-                    <h1>ABENEZER<br>SEIFU<br>DULA</h1>
+            <section class="flex bg-slate-800 text-white h-screen relative items-center px-10 justify-center">
+                <img src="images/Profile_pic_of_Abenezer.png" alt="Photo of Abenezer" class="self-end hidden md:block w-full max-w-xl relative right-28">
+                <hgroup class="text-lg">
+                    <h1 class="font-bold lg:text-3xl text-2xl mb-4">ABENEZER<br>SEIFU<br>DULA</h1>
                     <p>Software Engineering Student</p>
                 </hgroup>
             </section>
-            <section>
+            <section class="p-[3%] bg-slate-800 text-white mt-9 w-10/12 mx-auto px-[4%]">
                 <hgroup>
-                    <h2>About Me</h2>
+                    <h2 class="font-bold text-2xl mb-4 underline">About Me</h2>
                     <p>An ambitious and passionate Software Engineering student, learning new things every day. Born and raised in the eastern part of Ethiopia, Harar and currently enrolled at Addis Ababa University as Software Engineering student. Taking risks and more steps to cope up with the fast growing, changing and interesting tech sector.</p>
                 </hgroup>
             </section>
-            <section>
-                <h2>Education</h2>
-                <div>
-                    <div>
-                        <a href="https://6475e8f9abc8a.site123.me/" target="_blank"><img src="images/Hi-Tech_Academy_Logo.png" alt="Hi-Tech Academy Logo"></a>   
-                        <h4><a href="https://6475e8f9abc8a.site123.me/" target="_blank">Hi-Tech Academy</a>, Grade 1-12</h4>
+            <section class="p-[3%] bg-slate-800 text-white mt-9 w-10/12 mx-auto px-[4%]">
+                <h2 class="font-bold text-2xl mb-4 underline">Education</h2>
+                <div class="flex flex-col items-center md:flex-row gap-x-3">
+                    <div class="text-center my-6 md:w-1/4">
+                        <a href="https://6475e8f9abc8a.site123.me/" target="_blank" class="w-3/4 block max-w-xs mx-auto"><img src="images/Hi-Tech_Academy_Logo.png" alt="Hi-Tech Academy Logo"></a>   
+                        <h4><a href="https://6475e8f9abc8a.site123.me/" target="_blank" class="font-semibold underline hover:text-orange-400">Hi-Tech Academy</a>, Grade 1-12</h4>
                         <p>Oct, 2008 - Nov, 2021</p>
                         <address>Harar, Ethiopia</address>
                     </div>
-                    <p>Finished each grade with great score, average and class rank of no higher than 3rd, mostly ranked 1st. Had a good relationship with classmates. Helped them through their difficulties and digest the things we learned from teachers after school and around class breaks. Graduated high school by scoring 634 out of 700 at Ethiopian Higher Education Entrance Certificate Examination in 2021.</p>    
+                    <p class="md:w-3/4">Finished each grade with great score, average and class rank of no higher than 3rd, mostly ranked 1st. Had a good relationship with classmates. Helped them through their difficulties and digest the things we learned from teachers after school and around class breaks. Graduated high school by scoring 634 out of 700 at Ethiopian Higher Education Entrance Certificate Examination in 2021.</p>    
                 </div>
-                <div>
-                    <div>
-                        <a href="http://www.aau.edu.et/" target="_blank"><img src="images/Addis_Ababa_University_logo.png" alt="Addis Ababa University Logo"></a>   
-                        <h4><a href="http://www.aau.edu.et/" target="_blank">Addis Ababa University</a>, Software Engineering (BSc.)</h4>
+                <div class="flex flex-col items-center md:flex-row lg:flex-row-reverse gap-x-3">
+                    <div class="text-center my-6 md:w-1/4">
+                        <a href="http://www.aau.edu.et/" target="_blank" class="w-3/4 block max-w-[150px] mx-auto"><img src="images/Addis_Ababa_University_logo.png" alt="Addis Ababa University Logo"></a>   
+                        <h4><a href="http://www.aau.edu.et/" target="_blank" class="font-semibold underline hover:text-orange-400">Addis Ababa University</a>, Software Engineering (BSc.)</h4>
                         <p>Mar, 2022 - Present</p>    
                         <address>Addis Ababa, Ethiopia</address>
                     </div>
-                    <p>Currently a 3rd year, studying Software Engineering with a CGPA of 4.00. Continuing my highschool academic success, here also at AAU I am achieving good success academically and also participating in extra curriculum activities like clubs in campus.</p>
+                    <p class="md:w-3/4">Currently a 3rd year, studying Software Engineering with a CGPA of 4.00. Continuing my highschool academic success, here also at AAU I am achieving good success academically and also participating in extra curriculum activities like clubs in campus.</p>
                 </div>
             </section>
-            <section>
-                <h2>Experience</h2>
-                <div>
-                    <h4>Volunteering Tutor, Hi-Tech Academy<br>Jun, 2023 - Aug 2023</h4>
+            <section class="p-[3%] bg-slate-800 text-white mt-9 w-10/12 mx-auto px-[4%]">
+                <h2 class="font-bold text-2xl mb-6 underline">Experience</h2>
+                <div class="mb-8 bg-gray-200 text-slate-800 rounded-md p-6">
+                    <h4 class="font-semibold text-lg mb-4">Volunteering Tutor, Hi-Tech Academy<br>Jun, 2023 - Aug 2023</h4>
                     <p>A two month summer volunteering tutor about introduction to programming (Python) to interested high school students who aspire to be software engineers at my alma mater Hi-Tech Academy.</p>
                 </div>
-                <div>
-                    <h4>A2SV community education<br>May, 2023 - Present</h4>
-                    <p>Learning Data Structure and Algorithms at <a href="https://a2sv.org/" target="_blank">A2SV</a> community division 2 from May-Aug 2023 & at division 1 from Aug 2023 - Oct 2023. And currently promoted to the in-person education of the A2SV program as generation 5.</p>
+                <div class="mb-8 bg-gray-200 text-slate-800 rounded-md p-6">
+                    <h4 class="font-semibold text-lg mb-4">A2SV community education<br>May, 2023 - Present</h4>
+                    <p>Learning Data Structure and Algorithms at <a href="https://a2sv.org/" target="_blank" class="font-semibold underline hover:text-orange-400">A2SV</a> community division 2 from May-Aug 2023 & at division 1 from Aug 2023 - Oct 2023. And currently promoted to the in-person education of the A2SV program as generation 5.</p>
                 </div>
-                <div>
-                    <h4>A project about local Idir managing app</h4>
+                <div class="mb-8 bg-gray-200 text-slate-800 rounded-md p-6">
+                    <h4 class="font-semibold text-lg mb-4">A project about local Idir managing app</h4>
                     <p>I have been working on a pet project with my friend through the summer of 2023 about an Idir managing application that helps facilitate the management of Idir members, monthly payments and other financial workings of Idir.</p>
-                    <aside>"Idir" is a local social system practiced in Ethiopia which is the gathering of people and helping each other through happy and bad times.</aside>
+                    <aside class="my-8 bg-orange-100 text-slate-800 rounded-md p-6">"Idir" is a local social system practiced in Ethiopia which is the gathering of people and helping each other through happy and bad times.</aside>
                 </div>
             </section>
-            <section>
-                <h2>Skills</h2>
-                <div>
-                    <div>
-                        <h4>Python</h4>
-                        <div>
-                            <div>
+            <section class="p-[3%] bg-slate-800 text-white mt-9 w-10/12 mx-auto px-[4%]">
+                <h2 class="font-bold text-2xl mb-6 underline">Skills</h2>
+                <div class="flex flex-wrap justify-center gap-5">
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Python</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[90%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Java</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Java</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[80%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>SQL & MySQL</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">SQL & MySQL</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[60%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Git & GitHub</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Git & GitHub</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[70%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>HTML & CSS</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">HTML & CSS</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[75%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Networking and Packet Tracer</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Networking and Packet Tracer</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[65%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Creativity</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Creativity</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[90%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Critical Thinking</h4>
-                        <div>
-                            <div>    
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Critical Thinking</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[90%] bg-orange-400 rounded-full">    
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Communication</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Communication</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[85%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Team Work</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Team Work</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[90%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <h4>Leadership</h4>
-                        <div>
-                            <div>
+                    <div class="w-full max-w-[250px]">
+                        <h4 class="font-semibold">Leadership</h4>
+                        <div class="w-full bg-white h-3 flex rounded-full mt-1 mb-4">
+                            <div class="w-[80%] bg-orange-400 rounded-full">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <div>
+            <div class="w-60 py-3 my-7 mx-auto bg-slate-800 text-white text-center rounded-md hover:text-slate-800 hover:bg-orange-400 font-semibold">
                 <a href="Resources/Abenezer_Seifu_CV.pdf" download="Abenezer Seifu's CV">Download Resume</a>
             </div>
         </main>
-        <footer>
-            <div>
+        <footer class="flex flex-col bg-slate-800 text-white text-center p-2">
+            <div class="flex flex-col md:flex-row gap-4 justify-evenly items-center py-7">
                 <nav>
                     <ul>
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Adventure.html">Adventure</a></li>
-                        <li><a href="Entertainments.html">Entertainments</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Home.html" class="hover:text-orange-400">Home</a></li>
+                        <li><a href="Resume.html" class="hover:text-orange-400">Resume</a></li>
+                        <li><a href="Projects.html" class="hover:text-orange-400">Projects</a></li>
+                        <li><a href="Adventure.html" class="hover:text-orange-400">Adventure</a></li>
+                        <li><a href="Entertainments.html" class="hover:text-orange-400">Entertainments</a></li>
+                        <li><a href="Contact.html" class="hover:text-orange-400">Contact</a></li>
                     </ul>
                 </nav>
                 <address>
-                    <p>How do you prefer to take coffee?</p>
+                    <p class="mb-2">How do you prefer to take coffee?</p>
                     <ul>
-                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank">Facebook</a></li>
-                        <li><a href="https://t.me/Abe16s" target="_blank">Telegram</a></li>
-                        <li><a href="https://www.instagram.com/abe16s/" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:abenezerseifu123@gmail.com">Send a mail: abenezerseifu123@gmail.com</a></li>
-                        <li><a href="tel:0936120470" target="_blank">Call: +251936120470</a></li>
+                        <li><a href="https://www.facebook.com/abenezer.seifu" target="_blank" class="hover:text-orange-400">Facebook</a></li>
+                        <li><a href="https://t.me/Abe16s" target="_blank" class="hover:text-orange-400">Telegram</a></li>
+                        <li><a href="https://www.instagram.com/abe16s/" target="_blank" class="hover:text-orange-400">Instagram</a></li>
+                        <li><a href="https://twitter.com/AbenezerSeifu5" target="_blank" class="hover:text-orange-400">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/abenezer-seifu/" target="_blank" class="hover:text-orange-400">LinkedIn</a></li>
+                        <li><a href="mailto:abenezerseifu123@gmail.com" class="hover:text-orange-400">Send a mail: abenezerseifu123@gmail.com</a></li>
+                        <li><a href="tel:0936120470" target="_blank" class="hover:text-orange-400">Call: +251936120470</a></li>
                     </ul>
                 </address>
             </div>
             <hr>
-            <div>
-                <img src="images/AB_Logo.jpg" alt="AB Logo">
+            <div class="flex gap-4 items-center">
+                <img src="images/AB_Logo.jpg" alt="AB Logo" class="w-10 rounded-full">
                 <p>Copyright ©2023 All rights reserved | Abenezer Seifu </p>
             </div>
         </footer>
